@@ -1,6 +1,6 @@
 # Règles de confidentialité — LearnToUnlock
 
-Dernière mise à jour : 18 novembre 2026. Éditeur : Noah Floury. Contact : grillons.apps@gmail.com
+Dernière mise à jour : 18 novembre 2026. Éditeur : Noah Floury. Contact : learntounlock.apps@gmail.com
 
 LearnToUnlock ne demande aucun compte et n'affiche aucune publicité.
 
@@ -22,4 +22,4 @@ Génération par IA (option) : si tu la configures, le texte de ta demande est e
 
 Enfants : l'appli ne s'adresse pas aux moins de 13 ans.
 
-Questions ou demande : écris à grillons.apps@gmail.com.
+Questions ou demande : écris à learntounlock.apps@gmail.com.
