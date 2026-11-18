@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deviens testeur · LearnToUnlock</title>
+<meta name="description" content="Teste gratuitement LearnToUnlock sur Android : tes applis se débloquent quand tu fais ton anglais.">
+<meta property="og:title" content="Deviens testeur de LearnToUnlock">
+<meta property="og:description" content="Gratuit, Android, 2 minutes. Tes applis se débloquent quand tu fais ton anglais.">
+<meta name="theme-color" content="#FFC533">
+<style>
+  :root { --bg:#F3EEE3; --card:#FFFCF5; --ink:#17140F; --muted:#746C5D; --sun:#FFC533; --green:#2FCB7C; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:460px; margin:0 auto; padding:28px 18px 40px; }
+  .logo { width:72px; height:72px; border-radius:20px; background:var(--sun); border:2.5px solid var(--ink);
+    display:grid; place-items:center; box-shadow:4px 4px 0 var(--ink); }
+  h1 { font-size:28px; line-height:1.15; margin:20px 0 6px; letter-spacing:-.02em; }
+  .sub { color:var(--muted); margin:0 0 22px; font-weight:600; }
+  .step { background:var(--card); border:2.5px solid var(--ink); border-radius:18px; padding:16px;
+    margin:0 0 14px; box-shadow:4px 4px 0 var(--ink); }
+  .step h2 { font-size:17px; margin:0 0 4px; display:flex; gap:10px; align-items:center; }
+  .n { flex:none; width:28px; height:28px; border-radius:50%; background:var(--ink); color:var(--sun);
+    display:grid; place-items:center; font-size:15px; }
+  .step p { margin:0 0 12px 38px; color:var(--muted); font-size:15px; }
+  .step p:last-child { margin-bottom:0; }
+  .btn { display:block; margin-left:38px; text-align:center; text-decoration:none; color:var(--ink);
+    background:var(--sun); border:2.5px solid var(--ink); border-radius:14px; padding:13px 14px;
+    font-weight:800; font-size:17px; box-shadow:3px 3px 0 var(--ink); }
+  .btn:active { transform:translate(3px,3px); box-shadow:none; }
+  .btn.done { background:var(--green); }
+  .warn { display:none; background:var(--ink); color:#fff; border-radius:16px; padding:14px 16px; margin:0 0 18px; }
+  .warn b { color:var(--sun); }
+  .warn .btn { margin:10px 0 0; }
+  .foot { color:var(--muted); font-size:14px; margin-top:22px; }
+  .foot a { color:var(--ink); }
+</style>
+</head>
+<body>
+<main>
+  <div class="logo" aria-hidden="true">
+    <svg width="42" height="42" viewBox="0 0 1024 1024"><path fill="#17140F" d="M318 456V368C318 240 410 162 524 162S730 240 730 356a43 43 0 0 1-86 0c0-64-50-107-120-107s-118 47-118 119v88h294a98 98 0 0 1 98 98v205a98 98 0 0 1-98 98H323a98 98 0 0 1-98-98V554a98 98 0 0 1 93-98Z"/><path fill="#FFC533" d="M383 623a40 40 0 0 1 28 12l63 57 137-149a39 39 0 0 1 56 54L500 763a37 37 0 0 1-52 3l-93-93a36 36 0 0 1 28-50Z"/></svg>
+  </div>
+  <h1>Teste LearnToUnlock avant tout le monde</h1>
+  <p class="sub">Gratuit · Android · 2 minutes</p>
+
+  <div class="warn" id="inapp">
+    <b>Ouvre cette page dans Chrome.</b> Dans Instagram ou TikTok, la connexion Google est bloquée.
+    <a class="btn" id="chrome" href="#">Ouvrir dans Chrome</a>
+  </div>
+  <div class="warn" id="ios">
+    <b>Pas encore sur iPhone.</b> Le test est réservé à Android pour l'instant. Suis le compte pour la version iPhone !
+  </div>
+
+  <div class="step">
+    <h2><span class="n">1</span>Rejoins le groupe des testeurs</h2>
+    <p>Touche « Rejoindre le groupe », avec le compte Google de ton téléphone.</p>
+    <a class="btn" data-step="1" href="https://groups.google.com/g/learntounlock-testeurs" target="_blank" rel="noopener">Rejoindre le groupe</a>
+  </div>
+  <div class="step">
+    <h2><span class="n">2</span>Active le test</h2>
+    <p>Reviens ici, puis touche « Devenir testeur ».</p>
+    <a class="btn" data-step="2" href="https://play.google.com/apps/testing/com.noahfloury.learntounlock" target="_blank" rel="noopener">Devenir testeur</a>
+  </div>
+  <div class="step">
+    <h2><span class="n">3</span>Installe l'appli</h2>
+    <p>Elle s'ouvre dans le Play Store, comme n'importe quelle appli.</p>
+    <a class="btn" data-step="3" href="https://play.google.com/store/apps/details?id=com.noahfloury.learntounlock" target="_blank" rel="noopener">Installer LearnToUnlock</a>
+  </div>
+  <div class="step">
+    <h2><span class="n">4</span>Garde-la 14 jours</h2>
+    <p>Pas besoin de verrouiller une appli. Ça me permet de la publier pour tout le monde. Merci !</p>
+  </div>
+
+  <p class="foot">Un souci ou une idée ? Écris-moi en message privé sur Instagram ou TikTok.<br>
+  <a href="../">Règles de confidentialité</a></p>
+</main>
+<script>
+  var ua = navigator.userAgent || "";
+  if (/iPhone|iPad|iPod/.test(ua)) document.getElementById("ios").style.display = "block";
+  else if (/Instagram|FBAN|FBAV|musical_ly|Bytedance|TikTok|; wv\)/.test(ua)) {
+    document.getElementById("inapp").style.display = "block";
+    var u = location.href.replace(/^https?:\/\//, "");
+    document.getElementById("chrome").href = "intent://" + u + "#Intent;scheme=https;package=com.android.chrome;end";
+  }
+  try {
+    document.querySelectorAll(".btn[data-step]").forEach(function (b) {
+      var k = "ltu-step-" + b.dataset.step;
+      if (localStorage.getItem(k)) b.classList.add("done");
+      b.addEventListener("click", function () { localStorage.setItem(k, "1"); b.classList.add("done"); });
+    });
+  } catch (e) {}
+</script>
+</body>
+</html>
