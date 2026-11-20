@@ -1,6 +1,6 @@
 # Règles de confidentialité — LearnToUnlock
 
-Dernière mise à jour : 18 novembre 2026. Éditeur : Noah Floury. Contact : learntounlock.apps@gmail.com
+Dernière mise à jour : 20 novembre 2026. Éditeur : Noah Floury. Contact : learntounlock.apps@gmail.com
 
 LearnToUnlock ne demande aucun compte et n'affiche aucune publicité.
 
@@ -17,6 +17,8 @@ Bouton « Traduire la phrase » avec Google Traduction : s'il est utilisé, la p
 Dictionnaire : si tu l'acceptes, l'appli le télécharge une seule fois depuis GitHub (learntounlock.github.io), puis l'utilise hors ligne. Aucune donnée personnelle n'est envoyée ; comme pour toute page web, GitHub voit l'adresse IP du téléphone.
 
 Partage de listes : uniquement quand tu le décides, via le menu Partager d'Android.
+
+Retours et signalements : « Envoyer un retour » (Réglages) et « Signaler » (sous la correction d'un exercice) ouvrent un e-mail prêt à envoyer à learntounlock.apps@gmail.com, avec la version de l'appli, le modèle du téléphone, la version d'Android, l'exercice concerné et, pour un retour, les erreurs techniques notées par l'appli. Rien ne part tant que tu n'as pas touché « Envoyer » dans ta messagerie. Ces e-mails servent seulement à corriger l'appli.
 
 Génération par IA (option) : si tu la configures, le texte de ta demande est envoyé au serveur indiqué dans les réglages, seulement pour créer la liste demandée.
 
